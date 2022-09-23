@@ -6,7 +6,8 @@ const App = () => {
   useEffect(() => {}, []);
   return (
     <div className="App">
-      <header className="App-header">{RouterComponent()}</header>
+      {/* <header className="App-header"></header> */}
+      {RouterComponent()}
     </div>
   );
 };
