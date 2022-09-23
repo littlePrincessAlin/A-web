@@ -1,3 +1,12 @@
 .home {
     text-align: left;
 }
+.title {
+    text-align:  center;
+}
+.icon {
+    background: rgb(255, 232, 230);
+    color: rgb(130, 0, 20);
+    opacity: 1;
+    font-size: 12px;
+}

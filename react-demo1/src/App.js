@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
-import "./App.css";
+import React from "react";
+import Styles from "./App.css";
 import RouterComponent from "./utils/router";
 
 const App = () => {
-  useEffect(() => {}, []);
   return (
-    <div className="App">
+    <div className={Styles.App}>
       {/* <header className="App-header"></header> */}
       {RouterComponent()}
     </div>
