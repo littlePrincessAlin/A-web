@@ -57,7 +57,7 @@ const Mixins = () => (
     在这里我使用create-react-class这个包，来模拟class；
 
     <h2>使用举例</h2>
-    mixins里的每个元素，可以把逻辑函数进行分类，从而达到复用函数的效果。
+    我们可以把逻辑函数进行分类，从而提取相同的代码出来，达到复用函数的效果。
     <h2>mixins核心流程：</h2>
     <img alt="mixins核心流程" src="https://code52-1305763557.file.myqcloud.com/uploads/article/8zSOZpbaAa/8AFrj1SF2w.png"></img>
     <p>1、通过React.createClass(spec)接收到spec参数，判断spec对象中是否有mixins属性，</p>

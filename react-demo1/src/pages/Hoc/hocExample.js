@@ -22,3 +22,5 @@ function withLogin(WrappedComponent) {
     }
   };
 }
+
+export default withLogin;
