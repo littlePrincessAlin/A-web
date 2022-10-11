@@ -6,6 +6,8 @@ import RenderProps from "../pages/RenderProps/index.js";
 import Hoc from "../pages/Hoc/index.js";
 import Hooks from "../pages/Hooks/index.js";
 import HooksPrivate from "../pages/Hooks/HooksPrivate.js";
+// import hocExample1 from "../pages/Hoc/hocExample1.js";
+
 
 function RouterComponent() {
   let element = useRoutes([
@@ -44,6 +46,7 @@ function RouterComponent() {
       path: "/private",
       element: <HooksPrivate />,
     },
+
     // 重定向
     { path: "home", redirectTo: "/" },
     // 404找不到

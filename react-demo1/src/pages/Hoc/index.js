@@ -1,9 +1,12 @@
+import HocExample1 from './HocExample1.js';
+
 const Hoc = () => {
   return (
     <>
       <h1>效果：</h1>
       hocExample： 一个登陆鉴权的小例子；<br/>
       hocExample1： 一个渲染劫持的小例子；<br/>
+      <HocExample1/>
       <hr />
       <h1>hoc(高阶组件): </h1>
       <b>首先高阶？</b><br/>

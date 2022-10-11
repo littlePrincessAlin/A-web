@@ -14,7 +14,7 @@ let initZero = {
     this.setState({ seconds: 0 });
   },
 };
-
+// React.createClass
 let createReactClass = require("create-react-class");
 
 let TickTock = createReactClass({

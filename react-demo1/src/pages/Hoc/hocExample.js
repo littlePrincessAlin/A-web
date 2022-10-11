@@ -24,3 +24,9 @@ function withLogin(WrappedComponent) {
 }
 
 export default withLogin;
+
+
+
+// const saon = () => {
+// }
+// withLogin(saon)
