@@ -3,6 +3,7 @@
 react-demo1: 分享代码复用，react18<br/>
 react-demo2: 使用 react 的最佳实践<br/>
 react-demo3: 手动实现虚拟 dom 与 diff 与 Fiber<br/>
+demo: 一些样式小 demo<br/>
 
 ---
 
@@ -43,3 +44,7 @@ wechart: 微信小程序开发：taro+react
 
 手动实现虚拟 dom 与 diff 与 Fiber：
 随笔：https://www.yuque.com/u21076454/gp0xko/rmdq3v
+
+# demo
+
+样式小 demo，自己尝试实现一些
