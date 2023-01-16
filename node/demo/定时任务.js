@@ -48,7 +48,7 @@ const nameList = [
 async function checkIsHoliday(time) {
   return new Promise((resovle, reject) => {
     console.log('time__________', time);
-    cmd(`curl 'http://www.autmone.com/openapi/icalendar/queryDate?date=${time}' \
+    cmd(`curl 'http://timor.tech/api/holiday/info/${time}' \
         -H 'Connection: keep-alive' \
         -H 'Cache-Control: max-age=0' \
         -H 'Upgrade-Insecure-Requests: 1' \
@@ -64,10 +64,30 @@ async function checkIsHoliday(time) {
       }
       let data = {};
       if (r2 && typeof r2 === 'string') {
-        data = JSON.parse(r2).data;
+        data = JSON.parse(r2);
       }
-      resovle(data.isHoliday || ["六", "日"].includes(data.week));
+      resovle(data.holiday?.holiday || [6, 7].includes(data.type.week));
     })
+    // cmd(`curl 'http://www.autmone.com/openapi/icalendar/queryDate?date=${time}' \
+    //     -H 'Connection: keep-alive' \
+    //     -H 'Cache-Control: max-age=0' \
+    //     -H 'Upgrade-Insecure-Requests: 1' \
+    //     -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4535.3 Safari/537.36' \
+    //     -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+    //     -H 'Accept-Language: zh-CN,zh;q=0.9' \
+    //     --compressed \
+    //     --insecure`, (r1, r2) => {
+    //   console.log(r2)
+    //   if (r1) {
+    //     reject(null);
+    //     return;
+    //   }
+    //   let data = {};
+    //   if (r2 && typeof r2 === 'string') {
+    //     data = JSON.parse(r2).data;
+    //   }
+    //   resovle(data.isHoliday || ["六", "日"].includes(data.week));
+    // })
   })
 }
 
@@ -153,15 +173,15 @@ function dingTalk(mobile) {
           "
       },
       "at": {
-          "atMobiles": [
-      "13552024212",
-      "15565609894",
-      "13120000175",
-      "18733629466",
-      "18845573607",
-      "13785521928",
-],
-           "isAtAll": false
+        "atMobiles": [
+          "13552024212",
+          "15565609894",
+          "13120000175",
+          "18733629466",
+          "18845573607",
+          "13785521928"
+        ],
+        "isAtAll": false
        }
  }'`)
 }
