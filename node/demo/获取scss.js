@@ -32,10 +32,9 @@ getScssFile({
   console.log('resScss', resScss)
   let str = '';
   resScss.forEach(item => {
-    str += `  ${item.code}: ${item.value}; \n`
+    str += `$${item.code}: ${item.value}; \n`
   });
-  str = ':root { \n' + str + '}';
-   fs.writeFile('./scss文件.css', str, function(err) {
+   fs.writeFile('./scss文件.scss', str, function(err) {
       if (err) {
         writeFileErr = err;
       }
