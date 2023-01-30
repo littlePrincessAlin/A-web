@@ -5,6 +5,8 @@ react-demo2: 使用 react 的最佳实践<br/>
 react-demo3: 手动实现虚拟 dom 与 diff 与 Fiber<br/>
 demo: 一些样式小 demo<br/>
 node: node 学习<br/>
+test: 测试 js 是否生效<br/>
+vue-demo1: vuex 练习<br/>
 
 ---
 
@@ -59,3 +61,5 @@ wechart: 微信小程序开发：taro+react
 ## upload-koa
 
 koa 搭建的上传
+
+# vue-demo1: vuex 练习
