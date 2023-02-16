@@ -7,28 +7,16 @@ demo: 一些样式小 demo<br/>
 node: node 学习<br/>
 test: 测试 js 是否生效<br/>
 vue-demo1: vuex 练习<br/>
+js: 手写 js<br/>
 
 ---
 
-## vue-demo1: 基础语法
-
-## eslint-demo: eslint 配置
-
-## leetcode: 🐛 吖刷刷刷
-
-wechart: 微信小程序开发：taro+react
-
-# react-demo1
-
-使用 pnpm 搭建 react18 项目
-随笔：https://www.yuque.com/u21076454/gp0xko/ys0979
-
-# eslint-demo
+# eslint-demo: eslint 配置
 
 使用 pnpm 搭建 vue3 的项目
 随笔：https://www.yuque.com/u21076454/gp0xko/uym6d8
 
-# leetcode
+# leetcode: 🐛 吖刷刷刷
 
 刷题文件夹
 随笔：https://www.yuque.com/u21076454/gp0xko/yuvoi4
@@ -38,12 +26,19 @@ wechart: 微信小程序开发：taro+react
 微信小程序开发--暂未开始
 随笔：https://www.yuque.com/u21076454/gp0xko/xxbpps
 
-# react-demo2
+# react
+
+## react-demo1
+
+使用 pnpm 搭建 react18 项目
+随笔：https://www.yuque.com/u21076454/gp0xko/ys0979
+
+## react-demo2
 
 一些浅浅的开发经验
 随笔：
 
-# react-demo3
+## react-demo3
 
 手动实现虚拟 dom 与 diff 与 Fiber：
 随笔：https://www.yuque.com/u21076454/gp0xko/rmdq3v
@@ -62,4 +57,18 @@ wechart: 微信小程序开发：taro+react
 
 koa 搭建的上传
 
-# vue-demo1: vuex 练习
+# vue
+
+## vue-demo1: vuex 练习
+
+- 1、随笔：https://www.yuque.com/u21076454/gp0xko/swa5a7314xegg7m6
+
+# js
+
+code code 🤖️
+
+# webpack
+
+## webpack-demo1
+
+webpack 配置

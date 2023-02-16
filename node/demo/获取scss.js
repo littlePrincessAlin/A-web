@@ -28,7 +28,7 @@ const getScssFile = ({ tenantId = 1, rid = 1, terminal = 1 }) => new Promise((re
   });
 });
 getScssFile({
-  tenantId: 1,
+  tenantId: 800013,
   rid: 1,
   terminal: 1
 }).then(resScss => {
