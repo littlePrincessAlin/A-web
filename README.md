@@ -3,10 +3,10 @@
 react-demo1: 分享代码复用，react18<br/>
 react-demo2: 使用 react 的最佳实践<br/>
 react-demo3: 手动实现虚拟 dom 与 diff 与 Fiber<br/>
-demo: 一些样式小 demo<br/>
+demo: 一些样式小 demo，html 小实现<br/>
 node: node 学习<br/>
 test: 测试 js 是否生效<br/>
-vue-demo1: vuex 练习<br/>
+vue-demo1: vuex 练习 + vue3.0 尝试<br/>
 js: 手写 js<br/>
 
 ---
@@ -59,7 +59,7 @@ koa 搭建的上传
 
 # vue
 
-## vue-demo1: vuex 练习
+## vue-demo1: vuex 练习 + vue3 整体使用
 
 - 1、随笔：https://www.yuque.com/u21076454/gp0xko/swa5a7314xegg7m6
 
