@@ -1,13 +1,18 @@
 # 说明
 
+demo: 一些样式小 demo，html 小实现<br/>
+eslint-demo：之前写的配置 eslint<br/>
+js: 手写 js<br/>
+leetcode：力扣刷刷刷<br/>
+node: node 学习<br/>
 react-demo1: 分享代码复用，react18<br/>
 react-demo2: 使用 react 的最佳实践<br/>
 react-demo3: 手动实现虚拟 dom 与 diff 与 Fiber<br/>
-demo: 一些样式小 demo，html 小实现<br/>
-node: node 学习<br/>
 test: 测试 js 是否生效<br/>
+utils：通用方法函数<br/>
 vue-demo1: vuex 练习 + vue3.0 尝试<br/>
-js: 手写 js<br/>
+webpack：webpack 联系<br/>
+wechat：小程序联系<br/>
 
 ---
 

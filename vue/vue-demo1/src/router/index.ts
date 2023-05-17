@@ -18,6 +18,9 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import("../views/AboutView.vue"),
+      meta: {
+        title: "About",
+      },
     },
     {
       path: "/donglin",
@@ -25,6 +28,12 @@ const router = createRouter({
       component: ShouYe,
     },
   ],
+});
+
+// 导航守卫
+router.beforeEach((to, from) => {
+  console.log("to", to);
+  console.log("from", from);
 });
 
 export default router;
