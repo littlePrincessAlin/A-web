@@ -7,6 +7,7 @@ import InputComponent from '@/components/formComponent/Input';
 import ButtonComponent from '@/components/formComponent/Button';
 import { mapLoginComponent, loginFormItem } from '@/type/loginType';
 import type { CheckboxChangeEvent } from 'antd/es/checkbox';
+// import { useUpdateEffect } from '@/utils/useUpdateEffect';
 
 const Login: React.FC = () => {
   const mapComponent: mapLoginComponent = {
@@ -26,7 +27,10 @@ const Login: React.FC = () => {
   const checkBoxRef = useRef(null);
   const [isCheck, setIsCheck] = useState<boolean>(false);
   const [toolTip, setToolTip] = useState<boolean>(false);
-  const [clickScan, setClickScan] = useState<boolean>(false);
+  const [timer, setTimer] = useState<NodeJS.Timeout>(null);
+
+
+  const didMountRef = useRef(false);
 
   // 表单重置
   const onReset = () => {
@@ -56,14 +60,25 @@ const Login: React.FC = () => {
 
   // 扫码登陆
   const handleScan = () => {
-    setClickScan(!clickScan);
+    if(timer) {
+      clearTimeout(timer);
+      setTimer(null);
+      checkBoxRef.current.classList.remove("notice");
+    }
     // 查看《用户协议》和《隐私协议》是否勾选
     if(!isCheck) {
-      if(checkBoxRef?.current?.className) {
-        // 移除dom上的notice属性，以便触发第二次动画
-        checkBoxRef.current.classList.remove("notice");
-      }
-      setToolTip(true)
+      setTimeout(() => {
+        checkBoxRef.current.className = 'notice';
+      }, 0);
+      const timerRef = setTimeout(() => {
+        if(checkBoxRef?.current?.className) {
+          // 移除dom上的notice属性，以便触发第二次动画
+          checkBoxRef.current.classList.remove("notice");
+          setTimer(null);
+        }
+      }, 2000);
+      setTimer(timerRef);
+      setToolTip(true);
     }else {
     }
   }
@@ -76,19 +91,6 @@ const Login: React.FC = () => {
       setFormList(loginForm)
     }
   }, [pageStatus]);
-
-  // 首次不触发动画
-  useEffect(() => {
-    if(!isCheck) {
-      checkBoxRef.current.className = 'notice';
-    }
-    return () => {
-      // 销毁
-      if(checkBoxRef?.current?.className) {
-        checkBoxRef.current.classList.remove("notice");
-      }
-    }
-  }, [clickScan]);
 
   return (
     <>

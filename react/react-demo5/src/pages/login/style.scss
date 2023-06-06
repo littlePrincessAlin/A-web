@@ -56,8 +56,11 @@
 // 按钮布局
 .buttonList .ant-form-item-control-input-content {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
+  & > div {
+    margin-right: 50px;
+  }
 }
 
 // 底部注册文案
