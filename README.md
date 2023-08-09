@@ -45,8 +45,8 @@ code code 🤖️
 ## react-demo5
 react18+react-router6 写的平台demo需求
 
-## react-demo6
-react源码
+## reactTheory
+react原理与源码
 
 # node
 
@@ -65,6 +65,8 @@ react-demo5的服务端代码
 ## vue-demo1: vuex 练习 + vue3 整体使用
 
 - 1、随笔：https://www.yuque.com/u21076454/gp0xko/swa5a7314xegg7m6
+## vueTheory
+vue原理与源码
 
 # webpack
 
