@@ -68,6 +68,9 @@ react-demo5的服务端代码
 ## vueTheory
 vue原理与源码
 
+## vue3-demo1: vue3+vite实战
+- 1、随笔：https://www.yuque.com/u21076454/aig5nb/doio4t9mv5gzurrr/edit?toc_node_uuid=9B7jMUZemMeWBzOI
+
 # webpack
 
 ## webpack-demo1
